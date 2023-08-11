@@ -1,15 +1,79 @@
-{% extends 'base.html' %}
+{% extends 'menu.html' %}
 
 {% block conteudo %}
 
-<div class="main-home">
-    <div class="left-home">
-        <h1>GARAGE STUDIO LAB</h1><br>
-        <h2>Amplifique seu som aqui.</h2>
-    </div>
-    <div class="rigth-home">
+<main>
 
+ <!-- Hero Section -->
+ <header class="hero bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Bem-Vindo ao Garage Studio Lab</h1>
+      <p class="lead">Dois Décadas de Excelência em Gravação e Ensaio</p>
     </div>
-</div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="display-4">Amplifique seu som aqui.</h2>
+          <p>O Garage Studio Lab é um estúdio de gravação e ensaio com mais de 20 anos de experiência na indústria musical. Fundado por Rivelino Mendes e Efraim Rocha, nosso estúdio se dedica a proporcionar a melhor qualidade de áudio e ambiente criativo para artistas e bandas.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="/app/static/img/mesa.jpg" alt="Sobre Nós" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2 class="display-4 text-center">Nossos Serviços</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../static/img/foto1.jpg" alt="Serviço 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Gravação Profissional</h5>
+              <p class="card-text">Oferecemos serviços de gravação de alta qualidade, utilizando equipamentos de última geração e técnicos experientes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../static/img/sala.jpeg" alt="Serviço 2" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Mixagem e Masterização</h5>
+              <p class="card-text">Nossa equipe está pronta para transformar suas gravações em produções refinadas por meio de mixagem e masterização profissional.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../static/img/sala2.jpeg" alt="Serviço 3" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Espaço de Ensaio</h5>
+              <p class="card-text">Além das gravações, também oferecemos um espaço de ensaio acusticamente tratado para que você possa praticar com sua banda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--
+    <div class="main-home">
+        <div class="left-home">
+            <h1>GARAGE STUDIO LAB</h1><br>
+            <h2>Amplifique seu som aqui.</h2>
+        </div>
+        <div class="rigth-home">
+
+        </div>
+    </div>
+-->
+</main>
         
 {% endblock %}

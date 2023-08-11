@@ -1,8 +1,72 @@
-{% extends 'base.html' %}
+{% extends 'menu.html' %}
 
 
 {% block conteudo %}
+
+<main>
     
-    <h2>Contato</h2>
+    <div class="bg-conteudo">
+
+        <section id="contact" class="py-5">
+            <div class="container">
+              <h2 class="display-4 text-center">Entre em Contato</h2>
+              <div class="row mt-4">
+                <div class="col-md-6 mx-auto">
+                  <div class="card">
+                    <div class="card-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">E-mail</label>
+                          <input type="email" class="form-control" id="email" placeholder="seu.email@example.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Mensagem</label>
+                          <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+<main>
+    <div class="container">
+        <h1>Garage Studio Lab</h1>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+
+    <script>
+        // Código JavaScript para inicializar o mapa
+        function initMap() {
+            var garageStudioLab = {lat: -23.550520, lng: -46.633308}; // Substitua com as coordenadas do Garage Studio Lab
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: garageStudioLab,
+                zoom: 15
+            });
+
+            var marker = new google.maps.Marker({
+                position: garageStudioLab,
+                map: map,
+                title: 'Garage Studio Lab'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap"></script>
+</main>
+
+        
+    </div>
+
+    
+
+</main>
 
 {% endblock %}
