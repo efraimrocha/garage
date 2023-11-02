@@ -1,3 +1,5 @@
+![image](https://github.com/efraimrocha/garage/assets/67542881/64d18f1a-d570-445d-b901-8ddf807557ae)
+
 ```markdown
 # GARAGE STUDIO LAB Website
 
